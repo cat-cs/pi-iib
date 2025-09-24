@@ -1,4 +1,5 @@
-C:\Users\catarina.silva\Documents\InteliJ\pi-II-B\src\main\java\br\com\pucgo\ecocoleta\Cliente.java
-C:\Users\catarina.silva\Documents\InteliJ\pi-II-B\src\main\java\br\com\pucgo\ecocoleta\PontoColeta.java
-C:\Users\catarina.silva\Documents\InteliJ\pi-II-B\src\main\java\br\com\pucgo\ecocoleta\Servidor.java
-C:\Users\catarina.silva\Documents\InteliJ\pi-II-B\src\main\java\br\com\pucgo\ecocoleta\TipoResiduo.java
+/workspaces/pi-iib/src/main/java/br/com/pucgo/ecocoleta/Cliente/ClienteEcoColeta.java
+/workspaces/pi-iib/src/main/java/br/com/pucgo/ecocoleta/Entidade/PontoColeta.java
+/workspaces/pi-iib/src/main/java/br/com/pucgo/ecocoleta/Servidor/Service.java
+/workspaces/pi-iib/src/main/java/br/com/pucgo/ecocoleta/Servidor/ServidorEcoColeta.java
+/workspaces/pi-iib/src/main/java/br/com/pucgo/ecocoleta/Servidor/Validador.java

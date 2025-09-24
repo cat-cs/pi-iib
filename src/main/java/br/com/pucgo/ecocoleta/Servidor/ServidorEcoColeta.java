@@ -16,7 +16,6 @@ public class ServidorEcoColeta {
                 Socket clientSocket = serverSocket.accept(); // Bloqueia até um cliente conectar
                 System.out.println("Cliente conectado: " + clientSocket.getInetAddress());
 
-                // Cria uma nova Thread para cada cliente, permitindo múltiplas conexões
                 new Thread(() -> handleClient(clientSocket)).start();
             }
         } catch (IOException e) {
@@ -40,14 +39,12 @@ public class ServidorEcoColeta {
         }
     }
 
-    // Metodo central que processa os comandos do protocolo
     private static synchronized String processaRequisicao(String requisicao) {
 
         String[] partesRequisicao = requisicao.split(";", -1);
         String comando = partesRequisicao[0].toUpperCase();
 
         try {
-            // Direciona para o método específico de cada comando
             return switch (comando) {
                 case "CADASTRAR" -> Service.processarCadastro(partesRequisicao);
                 case "LISTAR" -> Service.processarListagem();
