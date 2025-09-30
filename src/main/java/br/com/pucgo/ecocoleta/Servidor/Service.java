@@ -53,7 +53,7 @@ public class Service {
                 .filter(ponto -> ponto.getTipoResiduo().toLowerCase().contains(tipoBuscado))
                 .forEach(ponto -> resultadoBusca.append(ponto.toString()).append("||"));
 
-        if (resultadoBusca.isEmpty()) {
+        if (resultadoBusca.length() > 0) {
             return resultadoBusca.toString();
         } else {
             return "INFO;" + " Nenhum ponto encontrado para o tipo: " + partes[1];
@@ -92,3 +92,4 @@ public class Service {
         return "OK;" + " Ponto de coleta ID " + idParaExcluir + " removido.";
     }
 }
+
